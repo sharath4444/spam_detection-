@@ -67,6 +67,7 @@ accuracy_nb = accuracy_score(y_test, y_pred_nb)
 print("Logistic Regression Accuracy:", accuracy_lr)
 print("Naive Bayes Accuracy:", accuracy_nb)
 
+
 # Save the models & vectorizer
 with open("vectorizer.pkl", "wb") as f:
     pickle.dump(vectorizer_ngram, f)
